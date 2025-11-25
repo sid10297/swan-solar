@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/page.html" },
+    { "source": "/about", "destination": "/about/page.html" },
+    { "source": "/ac-lighting", "destination": "/ac-lighting/page.html" },
+    { "source": "/portable-solar", "destination": "/portable-solar/page.html" },
+    { "source": "/pv-system", "destination": "/pv-system/page.html" },
+    { "source": "/solar-streetlight", "destination": "/solar-streetlight/page.html" },
+    { "source": "/solar-training", "destination": "/solar-training/page.html" },
+    { "source": "/water-heating", "destination": "/water-heating/page.html" },
+    { "source": "/articles", "destination": "/articles/page.html" }
+  ]
+}
+
